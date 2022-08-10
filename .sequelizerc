@@ -1,0 +1,12 @@
+//dentro vai tratar o caminho relativo
+const {resolve} = require('path');
+// primeiro momento o module vai receber o config que recebe o resolve e dentro dele as configuraçoes do nosso directorio.
+
+ //virgula para declarar o proximo module(migration)
+
+module.exports = {
+    config: resolve( 'src', 'config', 'database.js'),
+'models-path' : resolve('src', 'app', 'db', 'models'),
+'migrations-path': resolve( 'src', 'db', 'migrations'),
+'seeders-path': resolve( 'src', 'db', 'seeders'),
+}
